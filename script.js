@@ -122,16 +122,16 @@ function updateStats() {
     const speaking = estimateSpeakingTime(lang === 'zh' ? characters : words, lang);
 
     statsDiv.innerHTML = `
-        <ul>
-            <li>${s.words}: ${words}</li>
-            <li>${s.characters}: ${characters}</li>
-            <li>${s.paragraphs}: ${paragraphs}</li>
-            <li>${s.sentences}: ${sentences}</li>
-            <li>${s.unique}: ${unique}</li>
-            <li>${s.noSpaces}: ${noSpaces}</li>
-            <li>${s.reading}: ${reading}</li>
-            <li>${s.speaking}: ${speaking}</li>
-        </ul>
+        <div class="stat-grid">
+            <div class="stat-item"><span class="stat-value">${words}</span><span class="stat-label">${s.words}</span></div>
+            <div class="stat-item"><span class="stat-value">${characters}</span><span class="stat-label">${s.characters}</span></div>
+            <div class="stat-item"><span class="stat-value">${paragraphs}</span><span class="stat-label">${s.paragraphs}</span></div>
+            <div class="stat-item"><span class="stat-value">${sentences}</span><span class="stat-label">${s.sentences}</span></div>
+            <div class="stat-item"><span class="stat-value">${unique}</span><span class="stat-label">${s.unique}</span></div>
+            <div class="stat-item"><span class="stat-value">${noSpaces}</span><span class="stat-label">${s.noSpaces}</span></div>
+            <div class="stat-item"><span class="stat-value">${reading}</span><span class="stat-label">${s.reading}</span></div>
+            <div class="stat-item"><span class="stat-value">${speaking}</span><span class="stat-label">${s.speaking}</span></div>
+        </div>
     `;
 }
 

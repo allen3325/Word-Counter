@@ -79,6 +79,31 @@ textarea {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 12px;
+}
+
+.stat-item {
+    background: var(--bg-color);
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.stat-value {
+    font-size: 1.2em;
+    font-weight: 600;
+    display: block;
+}
+
+.stat-label {
+    margin-top: 4px;
+    font-size: 0.85em;
+}
+
 .stats ul {
     list-style: none;
     padding: 0;
