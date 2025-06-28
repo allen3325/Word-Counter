@@ -9,7 +9,7 @@ Open `index.html` in a web browser. Enter or paste text into the textarea. Selec
 ## Deploying to GitHub Pages
 
 1. Create a repository on GitHub and push this project to it.
-2. Copy the workflow in `.github/workflows/deploy.yml` included in this repo. GitHub Actions will build and publish the site whenever changes are pushed to `main`.
+2. Copy the workflow in `.github/workflows/deploy.yml` included in this repo. GitHub Actions will build and publish the site whenever changes are pushed to `main`. The workflow uses `actions/upload-pages-artifact@v2` to handle the deployment artifacts.
 3. In the repository's **Settings > Pages**, choose **GitHub Actions** as the source.
 4. After the workflow finishes, your site will be available at `https://<username>.github.io/<repository>`.
 
