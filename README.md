@@ -1,6 +1,6 @@
 # Word Counter
 
-A modern, minimalist web-based word counter that supports English and Traditional Chinese. The page updates statistics in real time and estimates reading and speaking time. Statistics can be exported as a text file or PDF.
+A modern, minimalist web-based word counter that supports English and Traditional Chinese. The interface now defaults to Traditional Chinese, but you can switch to English using the language dropdown. The page updates statistics in real time and estimates reading and speaking time. Statistics can be exported as a text file or PDF.
 
 ## Usage
 
